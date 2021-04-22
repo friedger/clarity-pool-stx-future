@@ -1,0 +1,15 @@
+[project]
+name = "clarity-pool-stx-future"
+
+[contracts.pox]
+path="contracts/pox.clar"
+depends_on = []
+
+
+[contracts.sip-010]
+path="contracts/trait-sip-010.clar"
+depends_on = []
+
+[contracts.pool-stx-future]
+path = "contracts/pool-stx-future.clar"
+depends_on = ["sip-010", "pox"]
